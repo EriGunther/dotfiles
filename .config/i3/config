@@ -175,9 +175,14 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #colors
-set $bright"#ec3de2"
+#alert color
+#set $bright"#ec3de2"
+set $bright "#60ee53"
 set $darrkk "#282828"
-set $accent "#3dffff"
+
+#Highlighted color
+#set $accent "#3dffff"
+set $accent "#1bc30b"
 
 # start i3bar to display a workspace bar
 bar {
@@ -208,7 +213,7 @@ client.urgent           $accent $accent $darrkk $bright
 client.placeholder      $accent $accent $darrkk $bright
 
 # gaps
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 0
 
@@ -265,6 +270,9 @@ for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [class="Pamac-manager"] floating enable
 for_window [class="Oracle VM VirtualBox Manager"] floating enable
 
+# Moving workspaces between screens 
+bindsym $mod+p move workspace to output right
+bindsym $mod+Shift+p move workspace to output left
 
 # floating size
 floating_maximum_size 1152 x 648
