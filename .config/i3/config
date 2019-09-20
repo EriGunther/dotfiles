@@ -13,6 +13,12 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec "$termEmu"
 
+# start filemanager
+bindsym $mod+Shift+Return exec urxvt -e ranger
+
+# start browser
+bindsym $mod+q exec "$webBrow"
+
 # kill focused window
 bindsym $mod+c kill
 
@@ -132,7 +138,8 @@ assign [class="jetbrains-idea-ce"] $WS5
 assign [class="vlc"] $WS7
 
 # 8
-#assign [class="Transmission-gtk"] $WS8
+assign [class="mgba-qt"] $WS8
+assign [class="mGBA"] $WS8
 
 # 9
 assign [class="discord"] $WS9
@@ -269,8 +276,10 @@ exec_always --no-startup-id fix_xcursor
 
 
 # screenshots
-bindsym $mod+Print exec --no-startup-id scrot 'pabz-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-bindsym $mod+Shift+Print exec --no-startup-id scrot -u 'pabz-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+#bindsym $mod+Print exec --no-startup-id scrot 'pabz-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+#bindsym $mod+Shift+Print exec --no-startup-id scrot -u 'pabz-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+bindsym $mod+Print exec --no-startup-id "flameshot gui"
+
 
 # floating
 for_window [class="Nitrogen"] floating enable
