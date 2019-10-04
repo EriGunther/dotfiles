@@ -18,12 +18,14 @@ bindsym $mod+Shift+Return exec urxvt -e ranger
 
 # start browser
 bindsym $mod+q exec "$webBrow"
+bindsym $mod+Shift+q exec "$webBrow --private-window"
+
 
 # kill focused window
 bindsym $mod+c kill
 
 # start rofi
-bindsym $mod+d exec --no-startup-id "rofi -show drun -theme gruvbox-dark -columns 2 -sidebar-mode"
+bindsym $mod+d exec --no-startup-id "rofi -show drun -theme android_notification -columns 2 -sidebar-mode"
 
 # start dmenu
 bindsym $mod+Shift+d exec --no-startup-id dmenu_recency
@@ -131,8 +133,9 @@ assign [class="libreoffice-startcenter"] $WS4
 
 # 5
 assign [class="Code"] $WS5
-assign [class="jetbrains-pycharm-ce"] $WS5
-assign [class="jetbrains-idea-ce"] $WS5
+assign [class="jetbrains-pycharm"] $WS5
+assign [class="jetbrains-goland"] $WS5
+assign [class="jetbrains-idea"] $WS5
 
 # 7
 assign [class="vlc"] $WS7
@@ -197,14 +200,11 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 #colors
-#alert color
-#set $bright"#ec3de2"
-set $bright "#60ee53"
+set $bright "#9effb7"
 set $darrkk "#282828"
 
 #Highlighted color
-#set $accent "#3dffff"
-set $accent "#1bc30b"
+set $accent "#50fa7b"
 
 # start i3bar to display a workspace bar
 bar {

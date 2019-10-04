@@ -25,56 +25,37 @@ XTerm*selectToClipboard: true
 !
 !------------------------------------------------------------------------------
 
-! special
-*.foreground:   #f8f8f8
-*.background:   #171717
-*.cursorColor:  #f8f8f8
-
-! black
-*.color0:       #171717
-*.color8:       #38252c
-
-! red
-*.color1:       #d81765
-*.color9:       #ff0000
-
-! green
-*.color2:       #97d01a
-*.color10:      #76b639
-
-! yellow
-*.color3:       #ffa800
-*.color11:      #e1a126
-
-! blue
-*.color4:       #16b1fb
-*.color12:      #289cd5
-
-! magenta
-*.color5:       #ff2491
-*.color13:      #ff2491
-
-! cyan
-*.color6:       #0fdcb6
-*.color14:      #0a9b81
-
-! white
-*.color7:       #ebebeb
-*.color15:      #f8f8f8
-
+! Dracula color scheme
+URxvt.foreground: #F8F8F2
+!URxvt.background: #282A36
+URxvt.color0:     #000000
+URxvt.color8:     #44475A
+URxvt.color1:     #FF5555
+URxvt.color9:     #FFB86C
+URxvt.color2:     #50FA7B
+URxvt.color10:    #50FA7B
+URxvt.color3:     #E6DB74
+URxvt.color11:    #F1FA8C
+URxvt.color4:     #6272A4
+URxvt.color12:    #6272A4
+URxvt.color5:     #BD93F9
+URxvt.color13:    #FF79C6
+URxvt.color6:     #8BE9FD
+URxvt.color14:    #66D9EF
+URxvt.color7:     #666666
+URxvt.color15:    #FFFFFF
 
 Xcursor.theme: xcursor-breeze
 Xcursor.size:                     0
 
 URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
-
 ! alternative font settings with 'terminus':
 ! URxvt.font:      -xos4-terminus-medium-r-normal--16-160-72-72-c-80-iso10646-1
 ! URxvt.bold.font: -xos4-terminus-bold-r-normal--16-160-72-72-c-80-iso10646-1
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
+URxvt.background:                 [95]#282A36
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
@@ -83,9 +64,9 @@ URxvt*foreground:                 grey
 URxvt*saveLines:                  5000
 
 ! for 'fake' transparency (without Compton) uncomment the following three lines
- URxvt*inheritPixmap:            true
- URxvt*transparent:              true
- URxvt*shading:                  10
+! URxvt*inheritPixmap:            true
+! URxvt*transparent:              true
+! URxvt*shading:                  30
 
 ! Normal copy-paste keybindings without perls
 URxvt.iso14755:                   false
